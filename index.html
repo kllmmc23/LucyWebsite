@@ -2,62 +2,134 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="vendors/css/normalize.css">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
-        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucia Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <title>Welcome to EdgeLedger</title>
 </head>
 
 <body>
-
-    <header>
-        <nav>
-            <div class="row">
-                <img src="resources/css/img/logo2.jpg" alt="white logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href='#'>Experience</a></li>
-                    <li><a href='#'>Contact me</a></li>
+    <header id="home" class="hero">
+        <div id="navbar" class="navbar">
+            <img src="/img/logo2.jpg" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <li><a href="#pic">Photos</a></li>
+                    <li><a href="#design">Designs</a></li>
+                    <li><a href="#callback">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-        <div class="hero-text-box">
-
-            <h1>Lucia Escalante</h1>
-            <h2>Model</h2>
-            <a href="#" class="btn btn-book">Book</a>
-            <a href="#" class="btn btn-more">Show me more</a>
-            <!-- <img src="resources/img/hero.jpg" alt="Dinner plate with chicken, carrots and asparagus"> -->
+            </nav>
+        </div>
+        <div class="content text-secondary">
+            <h1>Lucia Luz</h1>
+            <p>Model / Entrepenaur</p>
+            <a href="#callback" class="btn"><i class="fas fa-chevron-right"></i>Book me</a>
         </div>
     </header>
-    <section class="features">
-        
-    </section>
+    <main>
+        <!-- Photos -->
+        <section id="pic" class="cases flex-grid section-padding">
+            <header class="section-header">
+                <h4>This is what I do</h4>
+                <h2>Pictures</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, praesentium.
+                </p>
+            </header>
+            <div class="row">
+                <div class="column">
+                    <img src="img/lucia.jpg" alt="case 1">
+                    <img src="img/lucia 2.jpg" alt="case 2">
+                </div>
+                <div class="column">
+                    <img src="img/lucia.jpg" alt="case 1">
+                    <img src="img/lucia 3.jpg" alt="case 2">
+                </div>
+                <div class="column">
+                    <img src="img/lucia.jpg" alt="case 1">
+                    <img src="img/lucia 2.jpg" alt="case 2">
+                </div>
+                <div class="column">
+                    <img src="img/lucia.jpg" alt="case 1">
+                    <img src="img/lucia 3.jpg" alt="case 2">
+                </div>
+            </div>
+        </section>
+        <!-- Designs -->
+        <section id="design" class="cases flex-grid section-padding">
+            <header class="section-header">
+                <h4>This is what I design</h4>
+                <h2>Designs</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, praesentium.
+                </p>
+            </header>
+            <div class="row">
+                <div class="column">
+                    <img src="img/design/d3.jpg" alt="case 1">
+                    <img src="img/design/d2.jpg" alt="case 2">
+                </div>
+                <div class="column">
+                    <img src="img/design/d3.jpg" alt="case 1">
+                    <img src="img/design/d2.jpg" alt="case 2">
+                </div>
+                <div class="column">
+                    <img src="img/design/d3.jpg" alt="case 1">
+                    <img src="img/design/d4.jpg" alt="case 2">
+                </div>
+                <div class="column">
+                    <img src="img/design/d3.jpg" alt="case 1">
+                    <img src="img/design/d4.jpg" alt="case 2">
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="callback" class="contact flex-columns">
+            <!-- <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="img/side.jpg" alt="contact">
+                    </div>
+                </div> -->
+            <div class="row">
+                <div class="column bg-light">
+                    <h2 class="header">Request Callback</h2>
+                    <form action="" class="callback-form">
+                        <div class="form-control">
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Enter Name">
+                        </div>
+                        <div class="form-control">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-control">
+                            <label for="phone"></label>
+                            <input type="phone" name="phone" id="phone" placeholder="Enter Phone">
+                        </div>
+                        <div class="form-control">
+                            <label for="message"></label>
+                            <textarea name="area" id="area" placeholder="<----------message-------->"></textarea>
+                        </div>
+                        <input type="submit" value="Send" id="submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-dark">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <p>Copyright &copy; 2020 - Lucia Luz Designs</p>
+        </footer>
+    </main>
 </body>
 
 </html>
-<!-- 
-
-Section 1: Features
-Title: Get food fast — not fast food.
-
-Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
-
-Up to 365 days/year
-Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
-
-Ready in 20 minutes
-You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
-
-100% organic
-All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
-
-Order anything
-We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
- -->
-
